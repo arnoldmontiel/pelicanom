@@ -1,0 +1,116 @@
+2012/11/19 17:49:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in C:\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gii')
+#1 C:\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\workspace\PelicanoM\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/workspace/PelicanoM/index.php?r=gii
+---
+2012/11/20 11:53:06 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "monitor/index".' in C:\yii\framework\web\CController.php:879
+Stack trace:
+#0 C:\yii\framework\web\CController.php(783): CController->renderPartial('monitor/index', NULL, true)
+#1 C:\xampp\htdocs\workspace\PelicanoM\protected\controllers\SiteController.php(32): CController->render('monitor/index')
+#2 C:\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#3 C:\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\yii\framework\web\CWebApplication.php(276): CController->run('')
+#7 C:\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#8 C:\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\workspace\PelicanoM\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/workspace/PelicanoM/index.php
+HTTP_REFERER=http://localhost/workspace/PelicanoM/index.php?r=monitor/index
+---
+2012/11/20 12:31:26 [error] [exception.CException] exception 'CException' with message 'Property "UserIdentity._username" is not defined.' in C:\yii\framework\base\CComponent.php:174
+Stack trace:
+#0 C:\xampp\htdocs\workspace\PelicanoM\protected\components\UserIdentity.php(39): CComponent->__set('_username', 'admin')
+#1 C:\xampp\htdocs\workspace\PelicanoM\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#2 C:\yii\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#3 C:\yii\framework\validators\CValidator.php(197): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#4 C:\yii\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#5 C:\xampp\htdocs\workspace\PelicanoM\protected\controllers\SiteController.php(68): CModel->validate()
+#6 C:\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#7 C:\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 C:\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 C:\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\yii\framework\web\CWebApplication.php(276): CController->run('login')
+#11 C:\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/login')
+#12 C:\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\workspace\PelicanoM\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/workspace/PelicanoM/index.php?r=site/login
+HTTP_REFERER=http://localhost/workspace/PelicanoM/index.php?r=site/login
+---
+2012/11/20 12:34:50 [error] [php] include(NzbController.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\yii\framework\YiiBase.php:418)
+Stack trace:
+#0 C:\xampp\htdocs\workspace\PelicanoM\protected\controllers\SiteController.php(69): spl_autoload_call()
+#1 C:\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#2 C:\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 C:\yii\framework\web\CController.php(287): SiteController->runAction()
+#4 C:\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#5 C:\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#6 C:\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#7 C:\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\workspace\PelicanoM\index.php(13): CWebApplication->run()
+REQUEST_URI=/workspace/PelicanoM/index.php?r=site/login
+in C:\xampp\htdocs\workspace\PelicanoM\protected\controllers\SiteController.php (69)
+in C:\xampp\htdocs\workspace\PelicanoM\index.php (13)
+2012/11/20 12:35:01 [error] [php] include(MonitorController.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\yii\framework\YiiBase.php:418)
+Stack trace:
+#0 C:\xampp\htdocs\workspace\PelicanoM\protected\controllers\SiteController.php(69): spl_autoload_call()
+#1 C:\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#2 C:\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 C:\yii\framework\web\CController.php(287): SiteController->runAction()
+#4 C:\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#5 C:\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#6 C:\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#7 C:\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\workspace\PelicanoM\index.php(13): CWebApplication->run()
+REQUEST_URI=/workspace/PelicanoM/index.php?r=site/login
+in C:\xampp\htdocs\workspace\PelicanoM\protected\controllers\SiteController.php (69)
+in C:\xampp\htdocs\workspace\PelicanoM\index.php (13)
+2012/11/20 17:16:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "wsdl".' in C:\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\yii\framework\web\CController.php(271): CController->missingAction('wsdl')
+#1 C:\yii\framework\web\CWebApplication.php(276): CController->run('wsdl')
+#2 C:\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('monitor/wsdl')
+#3 C:\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\workspace\PelicanoM\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/workspace/PelicanoM/index.php?r=monitor/wsdl
+---
+2012/11/20 17:17:59 [error] [application] exception 'CDbException' with message 'Table "user" does not have a column named "token".' in C:\yii\framework\db\schema\CDbCommandBuilder.php:570
+Stack trace:
+#0 C:\yii\framework\db\ar\CActiveRecord.php(1454): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 C:\xampp\htdocs\workspace\PelicanoM\protected\controllers\WsMonitorController.php(100): CActiveRecord->findByAttributes(Array)
+#2 C:\xampp\htdocs\workspace\PelicanoM\protected\controllers\WsMonitorController.php(73): WsMonitorController->authenticateByToken('ad@min.com')
+#3 [internal function]: WsMonitorController->readHeartBeat('ad@min.com', 'abc123')
+#4 C:\yii\framework\web\services\CWebService.php(181): SoapServer->handle()
+#5 C:\yii\framework\web\services\CWebServiceAction.php(104): CWebService->run()
+#6 C:\yii\framework\web\actions\CAction.php(75): CWebServiceAction->run()
+#7 C:\yii\framework\web\CController.php(309): CAction->runWithParams(Array)
+#8 C:\yii\framework\web\CController.php(287): CController->runAction(Object(CWebServiceAction))
+#9 C:\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CWebServiceAction), Array)
+#10 C:\yii\framework\web\CWebApplication.php(276): CController->run('wsdl')
+#11 C:\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('wsMonitor/wsdl')
+#12 C:\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\workspace\PelicanoM\index.php(13): CApplication->run()
+#14 {main}
+in C:\xampp\htdocs\workspace\PelicanoM\index.php (13)
+2012/11/21 11:26:22 [error] [exception.CException] exception 'CException' with message 'SiteController and its behaviors do not have a method or closure named "authenticateByToken".' in C:\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 [internal function]: CComponent->__call('authenticateByT...', Array)
+#1 C:\xampp\htdocs\workspace\PelicanoM\protected\controllers\SiteController.php(38): SiteController->authenticateByToken('32c2341a914930a...')
+#2 C:\xampp\htdocs\workspace\PelicanoM\protected\controllers\SiteController.php(32): SiteController->readHeartBeat('32c2341a914930a...', 'abc123')
+#3 C:\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 C:\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#6 C:\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\yii\framework\web\CWebApplication.php(276): CController->run('')
+#8 C:\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#9 C:\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\workspace\PelicanoM\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/workspace/PelicanoM/index.php?start_debug=1&debug_host=192.168.100.103%2C127.0.0.1&send_sess_end=1&debug_session_id=1001&original_url=http%3A%2F%2Flocalhost%2Fworkspace%2FPelicanoM%2Findex.php&debug_start_session=1&debug_no_cache=1353504360650&debug_port=10000
+---
