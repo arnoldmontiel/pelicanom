@@ -49,7 +49,7 @@ return array(
 		),
 		*/
 		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=PelicanoM',
+			'connectionString' => 'mysql:host=localhost;dbname=pelicanom',
 			'emulatePrepare' => true,
 			'username' => 'root',
 			'password' => '',
