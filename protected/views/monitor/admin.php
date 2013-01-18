@@ -44,7 +44,8 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		'Id_device_state',
 		'description',
 		'insert_date',
-		array(
+		'was_sent',
+	array(
 			'class'=>'CButtonColumn',
 		),
 	),
