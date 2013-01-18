@@ -20,5 +20,12 @@
 	<?php echo CHtml::encode($data->description); ?>
 	<br />
 
+	<b><?php echo CHtml::encode($data->getAttributeLabel('insert_time')); ?>:</b>
+	<?php echo CHtml::encode($data->insert_time); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('was_sent')); ?>:</b>
+	<?php echo CHtml::encode($data->was_sent); ?>
+	<br />
 
 </div>
