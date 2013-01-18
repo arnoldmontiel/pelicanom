@@ -20,5 +20,7 @@ $this->menu=array(
 		'Id_device_type',
 		'Id_device_state',
 		'description',
+		'insert_date',
+		'was_sent'
 	),
 )); ?>
