@@ -72,7 +72,7 @@ class Monitor extends CActiveRecord
 			'Id_device_type' => 'Id Device Type',
 			'Id_device_state' => 'Id Device State',
 			'description' => 'Description',
-			'insert_date' => 'Insert Date',
+			'insert_date' => 'Date',
 			'was_sent' => 'Was Sent',
 		);
 	}
