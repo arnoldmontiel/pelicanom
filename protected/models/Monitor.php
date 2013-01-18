@@ -95,6 +95,8 @@ class Monitor extends CActiveRecord
 		$criteria->compare('description',$this->description,true);
 		$criteria->compare('insert_date',$this->insert_date,true);
 		$criteria->compare('was_sent',$this->was_sent);
+		
+		$criteria->order ='Id DESC';
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
